@@ -232,7 +232,7 @@ const clientConfigs = clientEntrypoints.map(clientEntrypoint => {
         inject: 'body',
       }),
       // add the generated js code to the html file inline
-      new HtmlWebpackInlineScriptPlugin(),
+      // new HtmlWebpackInlineScriptPlugin(),
       // this plugin allows us to add dynamically load packages from a CDN
       new DynamicCdnWebpackPlugin(DynamicCdnWebpackPluginConfig),
     ].filter(Boolean),
